@@ -1,0 +1,397 @@
+body {
+	font-family: Arial, sans-serif;
+}
+nav {
+	width: 100%;
+	height: 50px;
+	background: #344051;
+}
+.logo {
+	color: #f4f4f5;
+	font-size: 130%;
+	line-height: 50px;
+	padding-left: 20%;
+	float: left;
+}
+.menu {
+	float: left;
+	padding-left: 20%;
+}
+.menu li {
+	float: left;
+	line-height: 50px;
+	color: #f4f4f5;
+	margin-right: 30px;
+	font-size: 85%;
+	text-transform: uppercase;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat,url(../img/bg.png) center/cover no-repeat;
+}
+.TitleCont{
+	float: left;
+	margin: 23% 0px 0px 21%;
+	color: #2c384a;
+	text-align: center;
+}
+.TitleCont h1{
+	font-size: 310%;
+	font-weight: bold;
+}
+.TitleCont h4{
+	margin-top: 7%;
+	font-size: 100%;
+	font-weight: bold;
+	color: #79818d;
+}
+.TitleCont input{
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #6d7682;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 0px 16px;
+	margin: 50px 13px 0px 13px;
+}
+.rezum {
+	margin-top: 10%;
+	float: left;
+	width: 100%;
+	height: 80%;
+	background:url(../img/icon.png) 45.3% 88.5%/auto no-repeat,url(../img/chert.png) 50% 25%/auto no-repeat, url(../img/fotka.png) center/10% no-repeat, url(../img/FonOb.png) center/cover no-repeat;
+}
+.rezum h2{
+	float: left;
+	margin: 3% 0px 0px 46%;
+	font-size: 160%;
+	font-weight: bold;
+	color: #3f495a;
+}
+.rezum p{
+	width: 50%;
+	float: left;
+	margin: 18% 0px 0px 30%;
+	color: #3f495a;
+	text-align: left;
+	line-height: 12	px;
+	font-size: 85%;
+	font-weight: bold;
+}
+.rezum input{
+	height: 30px;
+	float: left;
+	margin: 2% 0 0 44%;
+	border: 2px solid #3f495a;
+	background: none;
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 0px 10px 0px 25px;
+	text-align: right;
+	color: #3f495a;
+}
+.skills{
+	height: 100%;
+	width: 100%;
+	
+	background: url(../img/skills/slesh.png)40% 35% no-repeat,url(../img/skills/nout.png) 20% 35% no-repeat,url(../img/skills/rocket.png)62% 35% no-repeat,url(../img/skills/gramof.png)83.5% 35% no-repeat,url(../img/chert.png)51% 19%/auto no-repeat,url(../img/skills/fonskil.png)no-repeat;
+	float: left;
+}
+.skills h2{
+	
+	margin: 7% 0px 0px 46%;
+	font-size: 160%;
+	font-weight: bold;
+	color: #3f495a;
+	float: center;
+}
+.skills h3{
+	float: left;
+	font-size: 130%;
+	font-weight: bold;
+    margin: 12% -7% 0px 18%;
+	color: #cf7600;
+}
+.skills h4#Web{
+	float: left;
+	font-weight: 600;
+	color: #3f495a;
+	text-align: center;
+	margin-left: 11%;
+	margin-top: 2%;
+	width: 20% ;
+	font-size: 90%; 
+}
+.skills h4#Dev{
+	float: left;
+	font-weight: 600;
+	color: #3f495a;
+	text-align: center;
+	margin-top: 2%;
+	width: 20% ;
+	font-size: 90%; 
+}
+.skills h4#Ceo{
+	float: left;
+	font-weight: 600;
+	color: #3f495a;
+	text-align: center;
+	margin-top: 2%;
+	width: 20% ;
+	font-size: 90%;
+}
+.skills h4#Mark{
+	float: left;
+	font-weight: 600;
+	color: #3f495a;
+	text-align: center;
+	margin-left: 1%;
+	margin-top: 2%;
+	width: 20% ;
+	font-size: 90%;
+}
+.case {
+	
+	height: 100%;
+	float: left;
+	background: url(../img/case/fot.png) 0% 160%/100% no-repeat, url(../img/chert.png) 61.5% 0%/auto no-repeat;
+}
+.case h2{
+	margin-top: -4%;
+	margin-left: 57%;
+	font-size: 165%;
+	font-weight: bold;
+	color: #3f495a;
+	float: left;
+}
+.case h3{
+	float: left;
+	text-align: center;
+	margin-top: 3%;
+	margin-left: 41%;
+	margin-right: 20%;
+	color: #3f495a;
+	font-weight: bold;
+	font-size: 90%;	
+}
+.case h4{
+	float:left;
+	font-size: 130%;
+	font-weight: bold;
+	color: #3f495a;
+}
+h4#client {
+   margin: 41% 0px 0px 25%;
+}
+h4#webs {
+   margin: 46% 0px 0px -11%;
+}
+h4#nazv{
+	margin: 41% 0px 0px 10%;
+	font-size: 120%;
+}
+.case span{
+	float:left;
+	color: #3f495a;
+}
+span#bsp{
+   margin: 43.5% 0px 0px -6%;
+   font-size: 90%;
+   font-weight: bold;
+}
+span#vsp{	
+   margin: 48.5% 0px 0px -10.5%; 
+   font-size: 90%;
+   font-weight: bold;
+}
+.case p{
+	margin-left: 46.15%;
+	margin-top: 48.5%;
+    color: #3f495a;	
+}
+.case input{
+	float: left;
+	height: 35px;
+	width: 150px;
+	border-radius: 5px;
+	margin-top: 5%;
+	margin-left: 25%;
+	background-color: #63b5ae;
+	color: #ffffff;
+	font-weight: bold;
+}
+.calc {
+	float: left;
+	height: 100%;
+	width: 100%;
+	background: url(../img/rast/rastch.png) 54.5% 90%/52% no-repeat;
+}
+.calc h2{
+	margin-top: 15%;
+	margin-left: 43%;
+	font-size: 165%;
+	font-weight: bold;
+	color: #3f495a;
+	float: left;
+	
+}
+.calc h3{
+	float: left;
+	font-size: 130%;
+	color: #3f495a;
+	font-weight: bold;
+}
+h3#tips{
+	
+	margin-top: 20%;
+	margin-left: -35%;
+}
+h3#diza{
+	
+	margin-top: 27%;
+	margin-left: -35%;
+}
+h3#adapti{
+	
+	margin-top: 34%;
+	margin-left: -35%;
+}
+.calc select{
+	float: left;
+	border-radius: 2px;
+	height: 40px;
+	width: 700px;
+	background-color: #eeeeee;
+}
+select#sel{
+	margin-left: 26.2%;
+	margin-top: 5.5%;
+}
+select#sell{
+	margin-left: 26.2%;
+	margin-top: 5.5%;
+}
+select#selll{
+	margin-left: 26.2%;
+	margin-top: 5.5%;
+}
+.calc h4{
+	float: left;
+	font-size: 115%;
+	color: #3f495a;
+	font-weight: bold;
+}
+h4#sroki{
+	margin-top: 12%;
+	margin-left: -51.7%;
+}
+h4#stoimost{
+	margin-top: 14%;
+	margin-left: -51.7%;
+}
+.calc p{
+	float: left;
+	font-size: 130%;
+	color: #3f495a;
+	font-weight: bold;
+	margin-top: 12%;
+	margin-left: -1%;
+}
+p#o{
+	margin-top: 14%;
+}
+.stat{
+	float: left;
+	margin-top: 7%;
+	height: 70%;
+	width: 100%;
+	background: url(../img/stat/kubok.png) 80% 50%/auto no-repeat, url(../img/stat/galka.png) 60% 50%/auto no-repeat, url(../img/stat/slashskob.png) 40% 50%/auto no-repeat, url(../img/stat/smail.png) 20% 50%/auto no-repeat, url(../img/chert.png) 50% 32%/auto no-repeat, url(../img/stat/fonstat.png) 50%/cover no-repeat;
+}
+.stat h2{
+	margin-top: 7%;
+	margin-left: 40%;
+	font-size: 165%;
+	font-weight: bold;
+	color: #3f495a;
+	float: left;
+}
+.otz {
+	float: left;
+	height: 70%;
+	width: 100%;
+	background:url(../img/otziv/tochser.png)49% 90%/auto no-repeat,url(../img/otziv/tochser.png)52% 90%/auto no-repeat,url(../img/otziv/toch.png)46% 90%/auto no-repeat,url(../img/otziv/fotochka.png)49% 50%/auto no-repeat, url(../img/chert.png)49% 32%/auto no-repeat ;
+}
+.otz h2{
+	margin-top: 7%;
+	margin-left: 45%;
+	font-size: 165%;
+	font-weight: bold;
+	color: #3f495a;
+	float: left;
+}
+.contact {
+	margin-top: 3%;
+	float: left;
+	height: 80%;
+	width: 100%;
+	background:url(../img/chert.png) 51% 27%/auto no-repeat,url(../img/kont/bg.png) center/cover no-repeat;
+}
+.contact h2{
+	margin-top: 7%;
+	margin-left: 44%;
+	font-size: 165%;
+	font-weight: bold;
+	color: #ffffff;
+	float: left;
+}
+.contact form{
+	opacity: 0.8;
+	width: 100%;
+	float: left;
+	margin-top: 6%;
+	margin-left: 33%;
+}
+.contact input{
+	padding-left: 5px;
+	height: 25px;
+	margin-right: 20px;
+	width: 250px;
+}
+.contact textarea {
+	width: 525px;
+	padding-left: 5px;
+	padding-top: 3px;
+}
+input#knopkacont{
+		background: none;
+		border: 2px solid #ffffff;
+		border-radius: 3px;
+		width: 90px;
+		height: 40px;
+		color: #ffffff;
+		font-weight: bold;
+		margin-left: 14%;
+}
+.contact p {
+	float: left;
+	color: #ffffff;
+	margin-top: 4%;
+	margin-left: 35%;
+	margin-right: 30%;
+}
+.map {
+	float: left;
+	height: 60%;
+	width: 100%;
+	background:url(../img/map.png) center/cover no-repeat;
+}
+.niz {
+	float: left;
+	height: 10%;
+	width: 100%;
+	background:url(../img/niz.png) center/cover no-repeat;
+}
