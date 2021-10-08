@@ -13,6 +13,15 @@
 
 
 <body>
+<div class="preloader">
+
+     <div class="preloader1">
+	 <h2>Загрузка</h2>
+	     <div class="preloader2"> </div>
+		 <div class="preloader3"> </div>
+		 <div class="preloader4"> </div>
+	 </div>
+</div>
         <header> 
 		    <nav> 
 			   <div class="logo">
@@ -21,41 +30,40 @@
 			   
 			   <div class="menu">
 			      <ul>
-				  <li>Обо мне</li>
-				  <li>Услуги</li>
-				  <li>Кейсы</li>
-				  <li>Прайс</li>
-				  <li>Отзывы</li>
-				  <li>Контакты</li>
+				      <li><a href="https://google.com">Обо мне</a></li>
+				      <li><a href="https://Ok.ru">Услуги</a></li>
+				      <li><a href="https://google.com">Кейсы</a></li>
+				      <li><a href="https://google.com">Прайс</a></li>
+				      <li><a href="https://google.com">Отзывы</a></li>
+				      <li><a href="https://google.com">Контакты</a></li>
 				  </ul>
 			   </div>
 		    </nav>
 		</header>
 		
-		<div class="main">
-		     <div class="TitleCont">
+		<main class="main">
+		
+		    <section class="TitleCont">
 			     <h1 align="center">Привет <br> Я Андрей Браун</h1>
 			     <h4 align="center">Фулл стек веб-разработчик и Android-разработчик </h4>
-				 <input type="submit" value="Обо мне">
-				 <input type="submit" value="Мои работы">
-			 </div>
+				 <input type="button" value="Обо мне">
+				 <input type="button" value="Мои работы">
+			 </section>
 			 
-			 <div class="rezum">
+			 <section class="rezum">
 			     <h2 align="center">
 				 <br><br>
 				    ОБО МНЕ
 				 </h2>
-				 
-				
 				 
 				 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. <br><br><br>
 				 
 				 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. .</p>
 				 <br><br>
 				 <input type="submit" value="Скачать резюме" >
-		     </div>
+		     </section>
 			 
-		<div class="skills">
+		     <section class="skills">
 			 
 			 <h2>
 			     ЧТО Я УМЕЮ
@@ -72,9 +80,9 @@
 				 <h4 id="Dev"> Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</h4>
 				 <h4 id="Ceo"> Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</h4>
 				 <h4 id="Mark"> Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</h4>
-			 </div>
+			 </section>
 			
-		 <div class="case">
+		     <section class="case">
 			 
 			<h2>
 			     КЕЙСЫ
@@ -89,9 +97,9 @@
 			<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p> <!--Если увеличить кол-во текста или прописать float к <p>, то всё в классе case ломается и съезжает, как решить я хз -->
 			<input type="submit" value="VISIT LIVE SUIT">
 			
-		 </div>
+		     </section>
 			  
-			 <div class="calc">
+			 <section class="calc">
 			 <h2>
 			
 			     РАСЧЁТ СТОИМОСТИ
@@ -126,23 +134,23 @@
 				<p>0</p>
 				<h4 id="stoimost">Стоимость</h4>
 				<p id="o">0</p>
-			 </div>
+			 </section>
 			 
-			 <div class="stat">
+			 <section class="stat">
 			    <h2> НЕМНОГО СТАТИСТИКИ </h2>
 				<hr/>
 				
 				<center>
 				
 				</center>
-			 </div>
+			 </section>
 			
-			 <div class="otz">
+			 <section class="otz">
 			    <h2 align="center"> ОТЗЫВЫ </h2>
 				
-			 </div>
+			 </section>
 			  
-			 <div class="contact">
+			 <section class="contact">
 			 
 			 <h2> МОИ КОНТАКТЫ</h2>
 				<hr/>
@@ -158,15 +166,23 @@
 					<input id="knopkacont" type="submit" value="Отправить">
 				    </form>
 					
-			 </div>
+			 </section>
 			 
-			 <div class="map">
-			 </div>
-			 <div class="niz">
+			 <section class="map">
+			 </section>
+			 <section class="niz">
 			 
-			 </div>
-		</div>
-		
-		
+			 </section>
+			 <script>
+                   window.onload = function () {
+                  document.body.classList.add('loaded_hiding');
+                    window.setTimeout(function () {
+                    document.body.classList.add('loaded');
+                     document.body.classList.remove('loaded_hiding');
+                   }, 500);
+                    }
+                   </script> 
+		</main>
+                
 </body>
 </html>

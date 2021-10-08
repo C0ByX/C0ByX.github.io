@@ -1,10 +1,14 @@
 body {
 	font-family: Arial, sans-serif;
+	
 }
+
 nav {
 	width: 100%;
 	height: 50px;
 	background: #344051;
+	position: fixed;
+	z-index: 1;
 }
 .logo {
 	color: #f4f4f5;
@@ -12,6 +16,7 @@ nav {
 	line-height: 50px;
 	padding-left: 20%;
 	float: left;
+	animation: coming 1.5s ease forwards;
 }
 .menu {
 	float: left;
@@ -24,17 +29,45 @@ nav {
 	margin-right: 30px;
 	font-size: 85%;
 	text-transform: uppercase;
+	opacity: 0;
+	
+}
+.menu li:nth-child(1){
+	animation: topshift 1s ease forwards;
+	
+}
+.menu li:nth-child(2){
+	animation: topshift 1s ease forwards;
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation: topshift 1s ease forwards;
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation: topshift 1s ease forwards;
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation: topshift 1s ease forwards;
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	float: right;
+	animation: raspiz 2.8s ease forwards;
 }
 .main{
 	width: 100%;
 	height: 100%;
-	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat,url(../img/bg.png) center/cover no-repeat;
+	
+	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat,url(../img/bg.png) center/cover no-repeat fixed;
 }
 .TitleCont{
 	float: left;
 	margin: 23% 0px 0px 21%;
 	color: #2c384a;
 	text-align: center;
+	animation: titulka 1s ease forwards;
 }
 .TitleCont h1{
 	font-size: 310%;
@@ -57,13 +90,15 @@ nav {
 	font-weight: bold;
 	padding: 0px 16px;
 	margin: 50px 13px 0px 13px;
+	transition: all 0.4s;
+	transform: scale(1);
 }
 .rezum {
 	margin-top: 10%;
 	float: left;
 	width: 100%;
 	height: 80%;
-	background:url(../img/icon.png) 45.3% 88.5%/auto no-repeat,url(../img/chert.png) 50% 25%/auto no-repeat, url(../img/fotka.png) center/10% no-repeat, url(../img/FonOb.png) center/cover no-repeat;
+	background:url(../img/icon.png) 45% 87.5%/auto no-repeat,url(../img/chert.png) 50% 25%/auto no-repeat, url(../img/fotka.png) center/10% no-repeat, url(../img/FonOb.png) center/cover no-repeat fixed;
 }
 .rezum h2{
 	float: left;
@@ -71,8 +106,11 @@ nav {
 	font-size: 160%;
 	font-weight: bold;
 	color: #3f495a;
+	
 }
+
 .rezum p{
+	position: static;
 	width: 50%;
 	float: left;
 	margin: 18% 0px 0px 30%;
@@ -93,12 +131,14 @@ nav {
 	padding: 0px 10px 0px 25px;
 	text-align: right;
 	color: #3f495a;
+	transition: all 0.4s;
+	transform: scale(1);
 }
 .skills{
 	height: 100%;
 	width: 100%;
 	
-	background: url(../img/skills/slesh.png)40% 35% no-repeat,url(../img/skills/nout.png) 20% 35% no-repeat,url(../img/skills/rocket.png)62% 35% no-repeat,url(../img/skills/gramof.png)83.5% 35% no-repeat,url(../img/chert.png)51% 19%/auto no-repeat,url(../img/skills/fonskil.png)no-repeat;
+	background: url(../img/skills/slesh.png)40% 35% no-repeat,url(../img/skills/nout.png) 20% 35% no-repeat,url(../img/skills/rocket.png)62% 35% no-repeat,url(../img/skills/gramof.png)83.5% 35% no-repeat,url(../img/chert.png)51% 19%/auto no-repeat,url(../img/skills/fonskil.png)no-repeat fixed;
 	float: left;
 }
 .skills h2{
@@ -309,7 +349,7 @@ p#o{
 	margin-top: 7%;
 	height: 70%;
 	width: 100%;
-	background: url(../img/stat/kubok.png) 80% 50%/auto no-repeat, url(../img/stat/galka.png) 60% 50%/auto no-repeat, url(../img/stat/slashskob.png) 40% 50%/auto no-repeat, url(../img/stat/smail.png) 20% 50%/auto no-repeat, url(../img/chert.png) 50% 32%/auto no-repeat, url(../img/stat/fonstat.png) 50%/cover no-repeat;
+	background: url(../img/stat/kubok.png) 80% 50%/auto no-repeat, url(../img/stat/galka.png) 60% 50%/auto no-repeat, url(../img/stat/slashskob.png) 40% 50%/auto no-repeat, url(../img/stat/smail.png) 20% 50%/auto no-repeat, url(../img/chert.png) 50% 32%/auto no-repeat, url(../img/stat/fonstat.png) 50%/cover no-repeat fixed;
 }
 .stat h2{
 	margin-top: 7%;
@@ -350,7 +390,7 @@ p#o{
 }
 .contact form{
 	opacity: 0.8;
-	width: 100%;
+	width: 50%;
 	float: left;
 	margin-top: 6%;
 	margin-left: 33%;
@@ -394,4 +434,193 @@ input#knopkacont{
 	height: 10%;
 	width: 100%;
 	background:url(../img/niz.png) center/cover no-repeat;
+}
+.menu li a{
+	transition: all 0.4s;
+	color:white;
+	transform: scale(1);
+	display: inline-block;
+	
+}
+.menu li a:visited{
+	color:white;
+	
+}
+.menu li a:hover{
+	color:#d17700;
+	transform: scale(1.3);
+}
+.menu li a:active{
+	color:#d17700;
+	transform: scale(1.1);
+}
+.TitleCont input:hover{
+	background: #344051;
+	color: white;
+	transform: scale(1.3);
+	
+}
+.TitleCont input:active{
+	
+	transform: scale(1.2);
+	
+}
+.rezum input:hover{
+	color: #d17700;
+	
+}
+.Rezum input:active{
+	transform: scale(1.2);
+}
+@keyFrames coming{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyFrames topshift {
+	0%{
+		opacity: 1;
+		margin-top: -100px;
+	}
+	20%{
+		opacity: 1;
+		margin-top: 0px;
+		transform: rotate(30deg);
+	}
+	40%{
+		opacity: 1;
+		margin-top: -20px;
+	}
+	60%{
+		opacity: 1;
+	    margin-top: 0px;
+		transform: rotate(-10deg);
+		
+	}
+    80%{
+		opacity: 1;
+		margin-top: -10px;
+	}
+	100%{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+@keyFrames titulka{
+	from{
+		opacity:0;
+		margin-left: -21%;
+	}
+	to{
+		opacity: 1;
+		margin-left: 21%;
+	}
+}
+@keyFrames raspiz{
+	
+	0%{
+		opacity: 0;
+		transform: translate(-1220px);
+		
+		
+	}
+	25%{
+		opacity: 1;
+		transform: translate(-870px);
+		
+	}
+	50%{
+		transform: translate(-1220px);
+		opacity: 0;
+	}
+	80%{
+		opacity:0;
+		transform: translate(300px);
+	}
+	100%{
+		transform:translate(0px);
+		opacity: 1;
+	}
+}
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #f4f4f5;
+  z-index: 1001;
+}
+
+.preloader1 {
+	width: 100%;
+	height: 100%;
+	color: #344051;
+	font-size: 85px;
+	text-align: center;
+	position: relative;
+	top: 300px;
+	animation: loadtext 1s ease alternate infinite;
+}
+.preloader2 {
+	float: left;
+	width:20px;
+	height: 20px;
+	border-radius: 30px;
+	border: 2px solid #d17700;
+	position: relative;
+	left: 850px;
+	top: -20px;
+	animation:anim  1s linear 0s infinite;
+	}
+	.preloader3 {
+		float: left;
+	width:20px;
+	height: 20px;
+	border-radius: 30px;
+	border: 2px solid #d17700;
+	position: relative;
+	left: 830px;
+	top: -20px;
+	opacity:1;
+	animation:anim 1s linear 0.5s infinite;
+	}
+	
+@keyframes anim {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    
+    50% {
+      transform: scale(0.7);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+@keyframes loadtext {
+     from{
+		 color: #344051;
+	
+	 }
+	to{
+		color: #d17700;
+		
+	}
+}
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
 }
