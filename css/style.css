@@ -293,6 +293,7 @@ nav {
 	margin: 0px 5% 0px 5%;
 	font-size: 13px;
 	white-space: nowrap;
+	width: 100%;
 }
 .stata img {
 	padding-bottom: 10%;
@@ -303,6 +304,21 @@ nav {
 }
 .staza img {
     margin-left: 35%;
+}
+.chasi h3{
+	margin-top: 10%;
+}
+.adst {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	justify-content: space-around;
+}
+.adst1 {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	justify-content: space-around;
 }
 .kontakt {
 	height:90%;
@@ -452,15 +468,34 @@ nav {
 	}
 	.opis {
 		flex-direction: column-reverse;
-	}
+        width: 95%;
+        height: 15%;
+        align-items: flex-start;
+}
+	
 	.opis h3 {
 		white-space: nowrap;
 	}
 	.pata{
 		margin-left:0%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 95%;
+		padding-right: 0%;
+	}
+	.nazv p{
+		width: 95%;
+		margin-left: 5%;
+	}
+	.inp {
+		align-self: center;
 	}
 	.case {
 		background: url(../img/84.png) center/cover repeat;
+	}
+	.case input {
+		width: 110px;
 	}
 	.calc select{
 	border-radius: 2px;
@@ -478,31 +513,23 @@ nav {
 		color: #cf7600;
 		text-shadow: #000000 1px 3px 0;
 	}
-	.stata {
-		flex-direction: row;
-		padding: 0px;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 10%;
-	}
-	.klient {
-		align-self: end;
-	}
-	.proe {
-		align-self: end;
-	}
-	.chasi{
-		align-self:flex-start;
-	}
-	.nagrad{
-		align-self:flex-start;
-	}
 	.kontp {
 		width: 90%;
 	}
 	.forma {
 		width: 99%;
 		margin-bottom: 30%;
+	}
+	.adst {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.adst1 {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.proe p {
+		padding-bottom: 6.5%;
 	}
 
 }
