@@ -46,10 +46,28 @@ nav {
 	list-style: none;
 	float: left;
 }
-.menu li a{
+.DisableA{
 	text-decoration: none;
 	color: #f4f4f5;
+	transition: all 0.4s;
+	transform: scale(1);
+	display: inline-block;
  
+}
+.menu li a:hover{
+	color:#d17700;
+	transform: scale(1.3);
+}
+.menu li a:active {
+	color:#d17700;
+	transform: scale(1.1);
+}
+.activeA {
+	color:#d17700;
+	text-decoration: none;
+	transition: all 0.4s;
+	transform: scale(1.2);
+	display: inline-block;
 }
 .logo {
 	color: #f4f4f5;
@@ -93,6 +111,18 @@ nav {
 	color: #6d7682;
 	padding: 0px 16px;
 	margin: 30px 13px 0px 13px;
+	transition: all 0.4s;
+}
+.titlecont input:hover{
+	background: #344051;
+	color: white;
+	transform: scale(1.3);
+	
+}
+.titlecont input:active{
+	
+	transform: scale(1.2);
+	
 }
 
 .rezum {
@@ -186,11 +216,13 @@ nav {
 	z-index: 1;
 }
 .kartin {
-	background:url(../img/case/fot.png) center/contain no-repeat;
 	height: 100%;
-	width: 100%;
+	width: 60%;
 	background-origin: border-box;
 }
+.carousel-item img {
+	height: 350px;
+  }
 .cazag{
 	padding-top: 3%;
     text-align: center;
@@ -242,10 +274,17 @@ nav {
 	z-index: 1;
 }
 .calc select{
-	border-radius: 2px;
 	height: 40px;
 	width: 700px;
 	background-color: #eeeeee;
+	color: #777777;
+	padding-left: 1%;
+	border-radius: 5px;
+	border: none;
+}
+.calc select:hover {
+	color: #000000;
+	background-color: #e4e4e4;
 }
 .calc h2 {
 	font-size: 34px;
@@ -264,9 +303,20 @@ nav {
 	color: #ffffff;
 	font-weight: bold;
 }
-.sroki {
+.otvet {
 	width: 700px;
-	
+	display: flex;
+	flex-direction: column;
+}
+.sroki {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.stoimost {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .stati {
 	background:url(../img/stat/fonstat.png) center/cover no-repeat fixed;
@@ -319,6 +369,41 @@ nav {
 	flex-direction: row;
 	width: 50%;
 	justify-content: space-around;
+}
+.otziv {
+	height: 60%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	z-index: 1;
+}
+.otzivzag img{
+	margin-left: 10%;
+}
+.otzivka{
+	width: 50%;
+	text-align: center;
+}
+.kar1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.karots img {
+	margin-bottom: 5%;
+}
+.karots p{
+	margin-top: 2%;
+}
+.slick-dots li button::before{
+	font-size: 30px;
+}
+.slick-dots li.slick-active button::before{
+	color:#d17700;
+	opacity: 1;
 }
 .kontakt {
 	height:90%;
@@ -394,11 +479,49 @@ nav {
 	font-weight: bold;
 	margin-left: 40%;
 }
+.wintime{
+	position: fixed;
+	top: 70%;
+	right: 3%;
+	z-index: 10;
+	display: flex;
+	opacity: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 25%;
+	width: 30%;
+	border: #cf7500 solid 3px;
+	border-radius: 10px;
+	background-color:#4747479f;
+	text-align: center;
+	transition: 0.4s;
+}
+.wintime h2{
+	color: rgba(255, 255, 255, 0.842);
+}
+.wintime:hover{
+	background-color:#252525c7;
+	transform: scale(1.1);
+}
+#closeWin{
+	height: 15%;
+	width: 30%;
+	background-color: #cf7500d5;
+	border: #252525c7 solid 1px;
+	border-radius: 5px;
+	transition: 0.4s;
+}
+#closeWin:hover{
+	background-color: #cf7600;
+	transform: scale(1.2);
+}
+#closeWin:active{
+	transform: scale(1.1);
+}
 
 @media (max-width: 991px) {
-	.titlecont {
-		
-	}
+
 	.titlecont h1{
 		text-shadow: #cf7600 1px 3px 0;
 		color: #000000;
@@ -530,6 +653,10 @@ nav {
 	}
 	.proe p {
 		padding-bottom: 6.5%;
+	}
+	.kartin{
+		height: 57%;
+		width: 100%;
 	}
 
 }
