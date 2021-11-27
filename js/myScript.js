@@ -3,7 +3,7 @@
 $(document).ready(function(){
 	$('a[href^="#"]').click(function(){
 		let valHref = $(this).attr("href");
-		$('html, body').animate({scrollTop: $(valHref).offset().top - 40 + "px"})
+		$('html, body').animate({scrollTop: $(valHref).offset().top - 30 + "px"})
 	});
 	$(window).scroll(() => {
 		let scrollDistance = $(window).scrollTop();
@@ -72,7 +72,7 @@ $(document).ready(function(){
 		});
 	}
 	function loadPic(){
-		let options = {threshold: [0.7]};
+		let options = {threshold: [0.5]};
 		let observer = new IntersectionObserver(onPic, options);
 		let elements = $('.load-pic');
 		elements.each((i, el) => {
@@ -91,20 +91,67 @@ $(document).ready(function(){
 				}
 				});
 			}
+	 function popWin (){
+	  setTimeout(function(){
+		  $('.wintime').css('display','flex').css('opacity','1');
+	  },1000);
+	  $('#closeWin').click(function(){
+		setTimeout(function(){
+			$('.wintime').css('opacity','0');
+		},100);
+		setTimeout(function(){
+			$('.wintime').css('display','none');
+	  },200);
+		  $('.callWin').css('opacity','1');
+	  })
+	  $('.callWin').click(function(){
+		  setTimeout(function(){
+			  $('.wintime').css('display','flex');
+		  },100);
+		  setTimeout(function(){
+			$('.wintime').css('opacity','1');
+		},200);
+		$('.callWin').css('opacity','0');
+	  })
+	}
+	function alertForm(){
+		$('.forma').submit(function(event){
+			if ($('#FIO').val() == "" || $('emailForm').val() == "" || $('MassageF').val() == ""){
+				event.preventDefault();
+				alert("Форма заполнена некорректно. Пожалуйста заполните все поля");
+			}
+		})
+	}
+	function cancel(){
+		$('.forma').submit(function(event){
+			event.preventDefault();
+
+			$.ajax({
+				type:"POST",
+				url: "php/mail.php",
+				data: $(this).serialize()
+			}).done(function(){
+				$(this).find('input').val('');
+				alert('Всё хорошо');
+				$('.forma').trigger('reset');
+			});
+			return false;
+		})
+	}
+
 	loadPic();
 	otlAnim();
+	popWin();
+	alertForm();
+	cancel();
+
+	
 	$('.image-link').magnificPopup({type:'image'});
 	$('.karots').slick({
 		infinite: true,
         dots: true,
 		slidesToShow: 1,
 	  });
-	  $('.wintime').hide(0).css('opacity','1');
-	  setTimeout(function(){
-		  $('.wintime').fadeIn(500, 'linear');
-	  },5000);
-	  $('#closeWin').click(function(){
-		  $('.wintime').fadeOut('normal','linear');
-	  })
+	 
 });
 
