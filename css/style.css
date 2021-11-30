@@ -44,11 +44,6 @@ nav {
 	flex-direction: row;
 	justify-content: flex-end;
 }
-.zatem{
-	position: absolute;
-	height:100%;
-	width: 100%;
-}
 .main{
 	height:100%;
 	width: 100%;
@@ -583,6 +578,17 @@ nav {
 }
 .kontp p{
 	padding-top: 10%;
+	transition: 0.4s;
+}
+.kontp p:hover{
+	transform: scale(1.5);
+	color: #007ba0;
+	text-shadow: 0 -10px 100px, 0 0 1px, 0 0 25px #ffffff;
+}
+.kontp p:active{
+	transform: scale(1.3);
+	color: #007ba0;
+	text-shadow: 0 -10px 100px, 0 0 1px, 0 0 25px #ffffff;
 }
 .forma {
 	opacity: 0.8;
@@ -663,7 +669,7 @@ nav {
 	justify-content: space-around;
 	height: 150px;
 	width: 300px;
-	border: #007ba0 solid 2px;
+	border: #007ba0 solid 1px;
 	border-radius: 10px;
 	background: url(../img/me/fon.png) center/cover no-repeat;
 	background-color:#4747479f;
@@ -674,7 +680,6 @@ nav {
 	margin-top: 7%;
 }
 .wintimeInp{
-	height: 50%;
 	width: 100%;
 }
 .wintime:hover{
@@ -707,6 +712,63 @@ footer{
 	width: 100%;
 	background: url(../img/podval.png) center/cover no-repeat;
 }
+.EnablePopBut{
+	display: inline-block;
+}
+.DisablePopBut{
+	display: none;
+}
+.PopForm{
+	display: none;
+	opacity: 0.8;
+	flex-direction: column;
+	height: 65%;
+	width: 50%;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 5%;
+}
+.formPop{
+	width: 80%;
+}
+.PopForm span{
+	width: 100%;
+	text-align: left;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	color: #007ba0;
+	text-shadow: 0 -10px 100px, 0 0 1px, 0 0 25px #ffffff;
+}
+.popFioEma{
+	display: flex;
+	flex-direction: column;
+}
+#PopMassageF{
+	width: 100%;
+	resize: none;
+}
+#PopKnopkacont{
+	height: 30px;
+	width: 30%;
+	height: 35px;
+	text-align: center;
+	border: 2px solid #536781;
+	background: none;
+	border-radius: 5px;
+	color: #007ba0;
+	padding: 0px 16px;
+	margin: 30px 13px 0px 13px;
+	transition: all 0.4s;
+	text-shadow: 0 -40px 100px, 0 0 1px, 0 0 1em #ffffff;
+	box-shadow: inset 0 0 10px 0 #005772, 0 0 10px 0 #005772;
+}
+#PopKnopkacont:hover{
+	transform: scale(1.2);
+}
+#PopKnopkacont:active{
+	transform: scale(1.1);
+}
 @media (min-width: 1920px){
 	.case{
 		height: 102%;
@@ -720,12 +782,7 @@ footer{
 	.menu ul{
 		margin-right: 2%;
 	}
-	.wintime{
-		top:85%;
-	}
-	.callWin{
-		top:75%;
-	}
+
 }
 @media (max-width: 991px) {
 	.menu ul{

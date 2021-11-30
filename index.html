@@ -7,7 +7,7 @@
 	<meta name="author" content="Evgenii">
 	<meta name="robots" content="all">
 	<meta property="og:title" content="Мини представление сайта" >
-	<title> Крутое название вкладки </title>
+	<title> Сайт-визитка </title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel='stylesheet' href="css/slick.css">
@@ -16,8 +16,6 @@
 </head>
 
 <body>
-<div class="zatem">
-</div>
      <header>
 	 
 		    <nav>
@@ -39,10 +37,10 @@
 		   <div class="row h-100 align-items-center">
 		   <div class="col-lg-6 mt-5">
 		    <div class="titlecont h-100">
-			    <h1 align="center">П<span>р</span>иве<span>т</span> <br> Я <span>Ев</span>ген<span>и</span>й Паз<span>ин</span></h1>
-			    <h4 align="center">Это мой Сайт-визитка <br></h4>
-				<input type="button" value="Обо мне">
-				<input type="button" value="Мои работы">
+			    <h1>П<span>р</span>иве<span>т</span> <br> Я <span>Ев</span>ген<span>и</span>й Паз<span>ин</span></h1>
+			    <h4>Это мой Сайт-визитка <br></h4>
+				<input type="button" value="Обо мне" onclick="window.location.href = '#obomne';">
+				<input type="button" value="Мои работы" onclick="window.location.href = '#keisi';">
 			</div>
 		   </div>
 		   </div>
@@ -259,7 +257,7 @@
 				 </div>
 				 <div class="konv">
 				 <img src="img/kont/konv.png" alt="Картинка ушла"> 
-				 <p>email@mail.com</p>
+				 <p class="clickMail">email@mail.com</p>
 				 </div>
 				 <div class="trub">
 				 <img src="img/kont/trub.png" alt="Картинка ушла">
@@ -267,7 +265,7 @@
 				 </div>
 				</div>
 				<div class="forma">
-				    <form action="php/mail.php" method="post">
+				    <form class="formb" action="php/mail.php" method="post">
 					<input id="FIO" type="text" name="user_name" value="" placeholder="Ф.И.О.">
 					<input id="emailForm" required type="email" name="user_email" value="" placeholder="Введите Email">
 					<textarea id="MassageF" name="user_massage" placeholder="Введите сообщение" cols="50" rows="5"></textarea>
@@ -277,10 +275,25 @@
 		 </section>
 		 <footer></footer>
 		 <div class="wintime">
-			 <h2>Форма обратной связи</h2>
+			<div><h2>Форма обратной связи</h2></div> 
+			 <div class="PopForm">
+				 <form class="formPop" action="php/mailPop.php" method="post">
+					 <div class="popFioEma">
+					<span>Ваше Имя</span>
+					<input id="popFIO" type="text" name="pop_name" value="" placeholder="Ф.И.О.">
+					<span>Ваш Email</span>
+					<input id="PopEmailForm" required type="email" name="pop_email" value="" placeholder="Введите Email">
+					<span>Ваше ообщение</span>
+					</div>
+					<textarea id="PopMassageF" name="pop_massage" placeholder="Введите сообщение" cols="50" rows="5"></textarea>
+					<div>
+					<input id="PopKnopkacont" type="submit" value="Отправить">
+				    </div>
+				 </form>
+			 </div>
 			 <div class="wintimeInp">
-			 <input type="button" value="Открыть" id="openWin">
-			 <input type="button" value="Закрыть" id="closeWin">
+			 <input type="button" value="Открыть" id="openWin" class="EnablePopBut">
+			 <input type="button" value="Закрыть" id="closeWin" class="EnablePopBut">
 			 </div>
 		 </div>
 		 <div class="callWin"></div>

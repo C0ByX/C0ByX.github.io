@@ -92,11 +92,19 @@ $(document).ready(function(){
 				});
 			}
 	 function popWin (){
+		 let cssClosePop = {
+			"top":"75%",
+			"right":"17px",
+			"height":"150px",
+			"width":"300px"
+		 }
 	  setTimeout(function(){
 		  $('.wintime').css('display','flex').css('opacity','1');
 	  },1000);
 	  $('#closeWin').click(function(){
 		setTimeout(function(){
+			$('.wintime').css(cssClosePop);
+			$('.PopForm').css('display','none').css('opacity','0');
 			$('.wintime').css('opacity','0');
 		},100);
 		setTimeout(function(){
@@ -105,6 +113,7 @@ $(document).ready(function(){
 		  $('.callWin').css('opacity','1');
 	  })
 	  $('.callWin').click(function(){
+		$('#openWin').css('display','inline-block');
 		  setTimeout(function(){
 			  $('.wintime').css('display','flex');
 		  },100);
@@ -123,7 +132,7 @@ $(document).ready(function(){
 		})
 	}
 	function cancel(){
-		$('.forma').submit(function(event){
+		$('.formb').submit(function(event){
 			event.preventDefault();
 
 			$.ajax({
@@ -132,8 +141,58 @@ $(document).ready(function(){
 				data: $(this).serialize()
 			}).done(function(){
 				$(this).find('input').val('');
-				alert('Всё хорошо');
-				$('.forma').trigger('reset');
+				alert('Сообщение отправлено! Вскоре вам ответят');
+				$('.formb').trigger('reset');
+			});
+			return false;
+		})
+	}
+	function openPop(){
+		let cssOpenPop = {
+			"top":"10%",
+			"right":"20%",
+			"height":"80%",
+			"width":"60%"
+		}
+		$('#openWin').click(function(){
+			$('.wintime').css(cssOpenPop);
+			setTimeout(function(){
+				$('.PopForm').css('display','flex');
+			},100);
+			setTimeout(function(){
+				$('.PopForm').css('opacity','0.8')
+			},200);
+			$('#openWin').css('display','none');
+		})
+	}
+	function cancelPop(){
+		$('.formPop').submit(function(event){
+			event.preventDefault();
+
+			$.ajax({
+				type:"POST",
+				url: "php/mailPop.php",
+				data: $(this).serialize()
+			}).done(function(){
+				$(this).find('input').val('');
+				alert('Сообщение отправлено! Вскоре вам ответят');
+				$('.formPop').trigger('reset');
+				
+				setTimeout(function(){
+					let cssClosePop = {
+						"top":"75%",
+						"right":"17px",
+						"height":"150px",
+						"width":"300px"
+					 }
+					$('.wintime').css(cssClosePop);
+					$('.PopForm').css('display','none').css('opacity','0');
+					$('.wintime').css('opacity','0');
+				},100);
+				setTimeout(function(){
+					$('.wintime').css('display','none');
+			  },200);
+				  $('.callWin').css('opacity','1');
 			});
 			return false;
 		})
@@ -144,8 +203,12 @@ $(document).ready(function(){
 	popWin();
 	alertForm();
 	cancel();
-
+	openPop();
+	cancelPop();
 	
+	$('.clickMail').click(function(){
+		window.location.href = "mailto:sobyx@mail.ru";
+	});
 	$('.image-link').magnificPopup({type:'image'});
 	$('.karots').slick({
 		infinite: true,
