@@ -1,0 +1,35 @@
+<div class="calculate">
+    <div class="calculate_takeValue">
+        <div class="calculate_takeValue_inp">
+            <span>Количество километров</span>
+            <input type="number" class="kmInp" #valKm>
+        </div>
+        <div class="calculate_takeValue_inp">
+            <span>Возраст</span>
+            <input type="number" class="ageInp" #valAge>
+        </div>
+        <div class="calculate_takeValue_inp">
+            <span>Вес багажа</span>
+            <input type="number" class="weigInp" #valWid>
+        </div>
+        <div class="calculate_takeValue_inp">
+            <input type="button" value="Расчитать" (click)="clickBut(valKm.value,valAge.value,valWid.value )">
+        </div>
+    </div>
+    <div class="calculate_answer">
+        <p>Предложение:</p>
+        <table>
+            <tbody>
+                <th>Аэрофлот</th>
+                <tr id="ekoAir" class="hidden">Эконом: {{resultCalc[0]}} ₽</tr>
+                <tr id="advanAir" class="hidden">Продвинутый: {{resultCalc[1]}} ₽</tr>
+                <tr id="luxAir" class="hidden">Люкс: {{resultCalc[2]}} ₽</tr>
+                <th>РЖД</th>
+                <tr id="ekoRgd" class="hidden">Эконом: {{resultCalc[3]}} ₽</tr>
+                <tr id="advanRgd" class="hidden">Продвинутый: {{resultCalc[4]}} ₽</tr>
+                <tr id="luxRgd" class="hidden">Люкс: {{resultCalc[5]}} ₽</tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
