@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light.eot');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/Roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-ExtraLight.eot');
+    src: local('Oswald ExtraLight'), local('Oswald-ExtraLight'),
+        url('../fonts/Oswald/Oswald-ExtraLight/Oswald-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Oswald/Oswald-ExtraLight/Oswald-ExtraLight.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-ExtraLight/Oswald-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald/Oswald-ExtraLight/Oswald-ExtraLight.svg#Oswald-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Light.eot');
+    src: local('Oswald Light'), local('Oswald-Light'),
+        url('../fonts/Oswald/Oswald-Light/Oswald-Light.woff2') format('woff2'),
+        url('../fonts/Oswald/Oswald-Light/Oswald-Light.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-Light/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald/Oswald-Light/Oswald-Light.svg#Oswald-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Bold.eot');
+    src: local('Oswald Bold'), local('Oswald-Bold'),
+        url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.woff2') format('woff2'),
+        url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.svg#Oswald-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Medium.eot');
+    src: local('Oswald Medium'), local('Oswald-Medium'),
+        url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.woff2') format('woff2'),
+        url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.svg#Oswald-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Regular.eot');
+    src: local('Oswald Regular'), local('Oswald-Regular'),
+        url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-SemiBold.eot');
+    src: local('Oswald SemiBold'), local('Oswald-SemiBold'),
+        url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.woff2') format('woff2'),
+        url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.woff') format('woff'),
+        url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.svg#Oswald-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+h1,h2,h3,h4{
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-size: 40px;
+}
+h2{
+    font-size: 25px;
+    color: #ff7948;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 20px;
+    color: white;
+}
+span{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+.mainCont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mainCont_rezum{
+    width: 90%;
+    background: #efefef;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.mainCont_rezum_contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-left: 2%;
+}
+.mainCont_rezum_contact_name img{
+    width: 35%;
+    height: 65%;
+    margin-top: -10%;
+}
+.mainCont_rezum_contact h4{
+    margin-top: 2%;
+}
+.mainCont_rezum_contact li {
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 2%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.mainCont_rezum_contact li:hover{
+    transform: translate(25%) scale(1.4);
+    background-color: #fccebd;
+}
+.mainCont_rezum_contact li:active{
+    transform: translate(10%) scale(1.2);
+    background-color: #ff7948;
+}
+.mainCont_rezum_contact li img {
+    height: 5%;
+    width: 5%;
+    fill: blue;
+    margin-top:-2%;
+}
+.mainCont_rezum_contact li h3{
+    margin-bottom: 3%;
+}
+.mainCont_rezum_contact li span{
+    margin-left: 1%;
+}
+.mainCont_rezum_contact_name{
+    width: 80%;
+    height: 35%;
+    background-color: #ff7948;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.mainCont_rezum_contact_contacts{
+    width: 75%;
+    height: 60%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.mainCont_rezum_skills{
+    width: 50%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.mainCont_portfolio{
+    width: 10%;
+    background: black;
+}
+.mainCont_rezum_skills_list{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 50px;
+}
+.mainCont_rezum_skills_list_soft{
+    height: 100%;
+    width: 50%;
+    direction: rtl;
+    margin-right: 5%;
+}
+.mainCont_rezum_skills_list_hard{
+    height: 100%;
+    width: 50%;
+    margin-left: 5%;
+}
+.mainCont_rezum_skills_list li{
+    list-style: inside;
+    margin-top: 3%;
+}
+
+.mainCont_rezum_skills_list h3{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.mainCont_rezum_skills_cert{
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.mainCont_rezum_close{
+    display: none;
+    opacity: 0;
+    width: 95%;
+    height: 90%;
+}
