@@ -21,6 +21,9 @@
     font-style: normal;
 }
 
+body {
+    font-family: CeraCondensedPro;
+}
 #mobileFormDisc{
     position: absolute;
     width: 308px;
