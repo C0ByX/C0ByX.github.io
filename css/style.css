@@ -48,7 +48,7 @@
     margin-top: 8px;
 }
 #mobileFormDisc_form_text{
-    display: block;
+    display: inline-block;
     font-size: 22px;
     font-family: 'CeraCondesedPro';
     font-weight: bold;
