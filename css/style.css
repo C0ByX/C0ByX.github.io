@@ -22,7 +22,7 @@
 }
 
 #mobileFormDisc{
-    position: absolute;
+    position: relative;
     width: 308px;
     height: 355px;
     top: 62px;
@@ -48,7 +48,7 @@
     margin-top: 8px;
 }
 #mobileFormDisc_form_text{
-    display: inline;
+    display: inline-block;
     font-size: 22px;
     font-family: 'CeraCondesedPro';
     font-weight: bold;
