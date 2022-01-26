@@ -67,6 +67,10 @@
    color:#F9001F;
    display: inline;
 }
+#redText1{
+   color:#F9001F;
+   display: inline;
+}
 #mobileFormDisc_form_input{
     display: flex;
     flex-direction: row;
