@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: CeraCondensedPro;
+    font: 15px/24px CeraCondesedPro, Arial, sans-serif;
 }
 #mobileFormDisc{
     position: absolute;
